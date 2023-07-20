@@ -1,0 +1,107 @@
+.work-sans {
+    font-family: 'Work Sans', sans-serif;
+}
+        
+#menu-toggle:checked + #menu {
+    display: block;
+}
+
+.hover\:grow {
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.hover\:grow:hover {
+    transform: scale(1.02);
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.bg-gradient {
+    background: linear-gradient(to right, url('assets/image1.jpg'), url('assets/image2.jpg'));
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+  }
+  
+  .image1 {
+    width: 50%;
+    height: auto;
+    float: left;
+  }
+  
+  .image2 {
+    width: 50%;
+    height: auto;
+    float: right;
+  }
+
+  
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #000;
+    /*Set to match the Tailwind colour you want the active one to be */
+}
+       
+.section-pie{
+    background-color: #000;
+    color: white;
+
+}
+
+.encabezado-1{
+    border: #000  1px ;
+    
+}
+
+.text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #3B82F6, #10B981);
+}
+
+.bg-custom {
+  background-color: #030130;
+}
+
+.foto-bg-1{
+    background-image: url(../assets/inicio1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto-bg-2 {
+    background-image: url(../assets/grad3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
